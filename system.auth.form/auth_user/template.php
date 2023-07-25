@@ -7,6 +7,7 @@ if($arResult['PHONE_AUTH_PARAMS']['USE']){
 	echo CJSCore::Init('phone_auth', true);
 } ?>
 <?
+global $USER;
 use Bitrix\Main\Page\Asset;
 $asset = Asset::getInstance();
 $APPLICATION->ShowHead();
@@ -14,6 +15,9 @@ $asset->addString("<link href='//fonts.googleapis.com/css?family=Montserrat' rel
 $asset->addString("<link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>");
 ?>
 <div id="ajax_auth">
+	<? if ($USER->IsAuthorized()) {
+		LocalRedirect($arParams['PROFILE_URL']);
+	} ?>
 	<?if($arResult["ERROR"]):?>
 		<div class="alert alert-danger"><?=$arResult['ERROR_MESSAGE']['MESSAGE']?></div>
 	<?elseif($arResult['SHOW_SMS_FIELD']):?>
