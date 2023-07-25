@@ -162,3 +162,6 @@ form[name="REGISTER_DONAQUA_RF"] {
 	box-shadow: inset 0px 0px 39px #35C9CF;
 	border-radius: 0px 0px 10px 10px;
 }
+.plug__reg-form__license {
+	display: none;
+}
