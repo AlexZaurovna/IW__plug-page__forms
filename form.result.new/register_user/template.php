@@ -112,7 +112,7 @@ $formFieldOrder = $arResult['QUESTIONS']['donaquarf_order'];
 			</label>
 		</div>
 	<?endif;?>
-	<input class="plug__plug-form__btn" type="submit" name="web_form_submit" value="<?=htmlspecialcharsbx(strlen(trim($arResult["arForm"]["BUTTON"])) <= 0 ? GetMessage("FORM_ADD") : $arResult["arForm"]["BUTTON"]);?>" />
+	<input class="plug__plug-form__btn" type="submit" name="web_form_submit" value="<?=$arResult["arForm"]["BUTTON"];?>" />
 </div>
 
 <?=$arResult["FORM_FOOTER"]?>
