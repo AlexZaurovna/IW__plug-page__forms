@@ -103,6 +103,15 @@ $formFieldOrder = $arResult['QUESTIONS']['donaquarf_order'];
 			</div>
 		</div>
 	</div>
+	<?$bShowLicenses = (isset($arParams["SHOW_LICENCE"]) ? $arParams["SHOW_LICENCE"] : COption::GetOptionString("aspro.next", "SHOW_LICENCE", "Y"));?>
+	<?if($bShowLicenses == "Y"):?>
+		<div class="licence_block filter label_block plug__reg-form__license">
+			<input type="checkbox" id="licenses_popup" name="licenses_popup"  required value="Y" checked <?//=(COption::GetOptionString("aspro.next", "LICENCE_CHECKED", "N") == "Y" ? "checked" : "");?>>
+			<label for="licenses_popup">
+				<?$APPLICATION->IncludeFile(SITE_DIR."include/licenses_text.php", Array(), Array("MODE" => "html", "NAME" => "LICENSES")); ?>
+			</label>
+		</div>
+	<?endif;?>
 	<input class="plug__plug-form__btn" type="submit" name="web_form_submit" value="<?=htmlspecialcharsbx(strlen(trim($arResult["arForm"]["BUTTON"])) <= 0 ? GetMessage("FORM_ADD") : $arResult["arForm"]["BUTTON"]);?>" />
 </div>
 
