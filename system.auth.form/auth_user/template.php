@@ -71,10 +71,7 @@ $asset->addString("<link href='//fonts.googleapis.com/css?family=Raleway' rel='s
 					</div>
 				</div>
 			</div>
-			<!-- <input type="submit" class="plug__plug-form__btn" name="Login" value="<?=GetMessage("AUTH_LOGIN_BUTTON")?>" tabindex="4"/> -->
-			<div class="buttons clearfix">
-				<input type="submit" class="btn btn-default bold" name="Login" value="<?=GetMessage("AUTH_LOGIN_BUTTON")?>" tabindex="4" />
-			</div>
+			<input type="submit" class="plug__plug-form__btn" name="Login" value="<?=GetMessage("AUTH_LOGIN_BUTTON")?>" tabindex="4"/>
 		</div>
 	</form>
 </div>
