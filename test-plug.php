@@ -62,27 +62,18 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
                 </div>
                 <button class="plug__plug-form__btn">Войти</button>
             </div> -->
-            <?
-            // $APPLICATION->IncludeComponent(
-            //     "bitrix:system.auth.form",
-            //     "auth_user",
-            //     Array(
-            //         "FORGOT_PASSWORD_URL" => "/test.php",
-            //         "PROFILE_URL" => "/personal/",
-            //         "REGISTER_URL" => "/test.php",
-            //         "SHOW_ERRORS" => "N"
-            //     )
-            // );
-            // $APPLICATION->IncludeComponent(
-            //     "bitrix:system.auth.form",
-            //     "auth_user",
-            //     Array(
-            //         "FORGOT_PASSWORD_URL" => "",
-            //         "PROFILE_URL" => "/personal/",
-            //         "REGISTER_URL" => "",
-            //         "SHOW_ERRORS" => "N"
-            //     )
-            // );
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:system.auth.form", 
+                "auth_user", 
+                array(
+                    "FORGOT_PASSWORD_URL" => "/auth/forgot-password/?forgot_password=yes",
+                    "PROFILE_URL" => "/personal/",
+                    "REGISTER_URL" => "/test-plug.php",
+                    "SHOW_ERRORS" => "N",
+                    "COMPONENT_TEMPLATE" => "auth_user"
+                ),
+                false
+            );
             ?>
             <!-- <div id="plug__reg-form">
                 <div class="plug-form__content">
