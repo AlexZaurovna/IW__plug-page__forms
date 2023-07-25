@@ -191,11 +191,6 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
         width: 602px;
     }
     #plug__content {
-        font-family: Montserrat;
-        font-size: 20px;
-        font-weight: 400;
-        letter-spacing: 0em;
-        color: #1F1F1F;
         width: 100vw;
         height: 100vh;
         background-image: url('/images/plug/bg.png');

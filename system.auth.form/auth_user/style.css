@@ -1,4 +1,11 @@
 /* fonts */
+#plug__auth-form {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    color: #1F1F1F;
+}
 .plug-form__title,
 .plug__plug-form__btn {
     font-weight: 500;
