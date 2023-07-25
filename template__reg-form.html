@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id='plug'>
+    <div id="plug__content">
+        <div id="plug__logo">
+            <img src="/images/plug/logo.png" alt="">
+        </div>
+        <div id="plug__reg-form">
+            <div class="plug-form__content">
+                <p class="plug-form__title">Регистрация</p>
+                <p class="plug-form__description">
+                    Зарегистрируйтесь, чтобы получить доступ </br>
+                    к индивидуальной цене!
+                </p>
+                <div class="plug-form__plug-fields">
+                    <label  class="plug-form__form-field">
+                        <div class="form-field__icon">
+                            <img src="/images/plug/mdi_user.svg" alt="" class="icon__login">
+                        </div>
+                        <input type="text" placeholder='Логин' class="form-field__input form-field__login">
+                    </label>
+                    <label  class="plug-form__form-field">
+                        <div class="form-field__icon">
+                            <img src="/images/plug/mdi_email.svg" alt="" class="icon__email">
+                        </div>
+                        <input type="text" placeholder='E-mail' class="form-field__input form-field__email">
+                    </label>
+                    <label  class="plug-form__form-field">
+                        <div class="form-field__icon">
+                            <img src="/images/plug/mdi_phone.svg" alt="" class="icon__phone">
+                        </div>
+                        <input type="text" placeholder='Телефон' class="form-field__input form-field__phone">
+                    </label>
+                </div>
+                <div class="reg-form__order-inf">
+                    <p class="order-inf__title">Информация о заказе</p>
+                    <div class="order-inf__inf-fields">
+                        <label  class="plug-form__form-field">
+                            <div class="form-field__icon">
+                                <img src="/images/plug/mdi_order.svg" alt="" class="icon__order-num">
+                            </div>
+                            <input type="text" placeholder='Номер заказа на маркете' class="form-field__input inf-fields__order-num">
+                        </label>
+                        <div class="inf-fields__markets">
+                            <div class="markets__single-market ya-market">
+                                <label class="single-market__box">
+                                    <input type="checkbox" class="market__box" name="ya-market" id="ya-market">
+                                    <span class="market__box-custom"></span>
+                                </label>
+                                <div class="market__title">Я.Маркет</div>
+                            </div>
+                            <div class="markets__single-market ozon-market">
+                                <label class="single-market__box">
+                                    <input type="checkbox" class="market__box" name="ozon-market" id="ozon-market">
+                                    <span class="market__box-custom"></span>
+                                </label>
+                                <div class="market__title">Ozon</div>
+                            </div>
+                            <div class="markets__single-market ali-market">
+                                <label class="single-market__box">
+                                    <input type="checkbox" class="market__box" name="ali-market" id="ali-market">
+                                    <span class="market__box-custom"></span>
+                                </label>
+                                <div class="market__title">Aliexpress</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="plug__plug-form__btn">Зарегистрироваться</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    #plug {
+        margin: 0px;
+        padding: 0px;
+    }
+    #plug__logo {
+        height: 120px;
+        width: 602px;
+    }
+    #plug__content {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('/images/plug/bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+</style>
